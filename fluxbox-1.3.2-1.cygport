@@ -1,0 +1,6 @@
+DESCRIPTION="Fluxbox window manager"
+HOMEPAGE="http://fluxbox.org/"
+SRC_URI="mirror://sourceforge/fluxbox/${P}.tar.lzma"
+PATCH_URI="1.3.2-nls-vpath.patch"
+
+CYGCONF_ARGS="--enable-nls LIBS=-lcatgets"

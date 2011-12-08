@@ -1,0 +1,324 @@
+--- origsrc/fluxbox-1.3.2/nls/be_BY/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/be_BY/Makefile.am	2011-12-07 20:06:03.002984800 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/bg_BG/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/bg_BG/Makefile.am	2011-12-07 20:06:18.613006300 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/cs_CZ/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/cs_CZ/Makefile.am	2011-12-07 20:05:12.152914600 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/da_DK/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/da_DK/Makefile.am	2011-12-07 20:06:27.573018700 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/de_AT/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/de_AT/Makefile.am	2011-12-07 20:06:30.303022400 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/de_CH/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/de_CH/Makefile.am	2011-12-07 20:06:33.203026400 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/de_DE/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/de_DE/Makefile.am	2011-12-07 20:06:35.943030200 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/el_GR/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/el_GR/Makefile.am	2011-12-07 20:06:39.193034700 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/en_GB/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/en_GB/Makefile.am	2011-12-07 20:06:41.663038100 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/en_US/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/en_US/Makefile.am	2011-12-07 20:06:44.433041900 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/es_AR/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/es_AR/Makefile.am	2011-12-07 20:06:48.143047100 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/es_ES/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/es_ES/Makefile.am	2011-12-07 20:06:50.533050400 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/et_EE/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/et_EE/Makefile.am	2011-12-07 20:06:54.133055300 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/fi_FI/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/fi_FI/Makefile.am	2011-12-07 20:06:56.883059100 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/fr_CH/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/fr_CH/Makefile.am	2011-12-07 20:06:59.843063200 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/fr_FR/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/fr_FR/Makefile.am	2011-12-07 20:07:02.343066600 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/it_IT/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/it_IT/Makefile.am	2011-12-07 20:07:04.853070100 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/ja_JP/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/ja_JP/Makefile.am	2011-12-07 20:07:07.503073800 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/ko_KR/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/ko_KR/Makefile.am	2011-12-07 20:07:09.753076900 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/lv_LV/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/lv_LV/Makefile.am	2011-12-07 20:07:11.853079800 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/mk_MK/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/mk_MK/Makefile.am	2011-12-07 20:07:14.173083000 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/nb_NO/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/nb_NO/Makefile.am	2011-12-07 20:07:16.293085900 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/nl_NL/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/nl_NL/Makefile.am	2011-12-07 20:07:18.333088700 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/no_NO/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/no_NO/Makefile.am	2011-12-07 20:07:20.363091500 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/pl_PL/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/pl_PL/Makefile.am	2011-12-07 20:07:22.353094300 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/pt_BR/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/pt_BR/Makefile.am	2011-12-07 20:07:25.023097900 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/pt_PT/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/pt_PT/Makefile.am	2011-12-07 20:07:27.043100700 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/ru_RU/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/ru_RU/Makefile.am	2011-12-07 20:07:30.713105800 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/sk_SK/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/sk_SK/Makefile.am	2011-12-07 20:07:33.163109200 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/sl_SI/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/sl_SI/Makefile.am	2011-12-07 20:07:35.123111900 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/sv_SE/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/sv_SE/Makefile.am	2011-12-07 20:07:37.053114500 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/tr_TR/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/tr_TR/Makefile.am	2011-12-07 20:07:38.863117000 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/uk_UA/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/uk_UA/Makefile.am	2011-12-07 20:07:40.703119600 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/vi_VN/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/vi_VN/Makefile.am	2011-12-07 20:07:43.773123800 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/zh_CN/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/zh_CN/Makefile.am	2011-12-07 20:07:45.623126400 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
+--- origsrc/fluxbox-1.3.2/nls/zh_TW/Makefile.am	2011-10-29 08:46:15.000000000 -0500
++++ src/fluxbox-1.3.2/nls/zh_TW/Makefile.am	2011-12-07 20:07:48.223130000 -0600
+@@ -42,5 +42,5 @@ uninstall-local:
+ fluxbox-%.cat: generated-%.m Translation.m
+ 	@if test x$(NLSTEST) = "x-DNLS"; then \
+ 		echo "Creating catfile for $*"; \
+-		$(gencat_cmd) fluxbox-$*.cat generated-$*.m; \
++		$(gencat_cmd) fluxbox-$*.cat $(srcdir)/generated-$*.m; \
+ 	fi
