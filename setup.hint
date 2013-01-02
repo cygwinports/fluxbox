@@ -1,6 +1,0 @@
-category: X11
-requires: libcatgets1 libfontconfig1 libfribidi0 libgcc1 libiconv2 libImlib2_1 libstdc++6 libX11_6 libXext6 libXft2 libXinerama1 libXpm4 libXrandr2 libXrender1 eterm xmessage xmodmap
-sdesc: "Fluxbox window manager"
-ldesc: "Fluxbox is a windowmanager for X that was based on Blackbox. It 
-is very light on resources and easy to handle but yet full of features 
-to make an easy, and extremely fast, desktop experience."
