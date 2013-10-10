@@ -1,0 +1,22 @@
+--- origsrc/fluxbox-1.3.5/util/Makefile.am	2013-02-13 04:04:05.903812600 -0600
++++ src/fluxbox-1.3.5/util/Makefile.am	2013-10-09 21:12:39.742642300 -0500
+@@ -35,8 +35,8 @@ startfluxbox: 	startfluxbox.in
+ 		@regex_cmd@ -e "s,@pkgdatadir@,$(pkgdatadir),g" \
+ 		            -e "s,@pkgbindir@,$(bindir),g" \
+ 		            -e "s,@pkgprefix@,$(PROGRAM_PREFIX:NONE=),g" \
+-		            -e "s,@pkgsuffix@,$(PROGRAM_SUFFIX:NONE=),g" \
+-		            -e "s,@EXEEXT@,$(EXEEXT),g" \
++		            -e "s,@pkgsuffix\@,$(PROGRAM_SUFFIX:NONE=),g" \
++		            -e "s,\@EXEEXT\@,$(EXEEXT),g" \
+ 				$(srcdir)/startfluxbox.in > startfluxbox
+ 		-chmod 755 startfluxbox
+ 
+@@ -44,7 +44,7 @@ fluxbox-generate_menu: fluxbox-generate_
+ 		@regex_cmd@ -e "s,@PREFIX@,$(prefix),g" \
+ 		            -e "s,@pkgprefix@,$(PROGRAM_PREFIX:NONE=),g" \
+ 		            -e "s,@pkgsuffix@,$(PROGRAM_SUFFIX:NONE=),g" \
+-		            -e "s,@EXEEXT@,$(EXEEXT),g" \
++		            -e "s,\@EXEEXT\@,$(EXEEXT),g" \
+ 				$(srcdir)/fluxbox-generate_menu.in \
+ 				> fluxbox-generate_menu
+ 		-chmod 755 fluxbox-generate_menu
