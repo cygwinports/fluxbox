@@ -1,14 +1,37 @@
+inherit vim
+
 NAME="fluxbox"
-VERSION=1.3.5
+VERSION=1.3.7
 RELEASE=1
 CATEGORY="X11"
 SUMMARY="Fluxbox window manager"
 DESCRIPTION="Fluxbox is a windowmanager for X that was based on Blackbox. It
 is very light on resources and easy to handle but yet full of features to make
 an easy, and extremely fast, desktop experience."
-REQUIRES="eterm xmessage xmodmap"
+REQUIRES="font-artwiz-aleczapka-dpi75 run xinit xmessage xmodmap"
 HOMEPAGE="http://fluxbox.org/"
-SRC_URI="mirror://sourceforge/fluxbox/${NAME}-${VERSION}.tar.lzma"
-PATCH_URI="1.3.5-exeext.patch"
+SRC_URI="mirror://sourceforge/fluxbox/${NAME}-${VERSION}.tar.xz"
+SRC_URI+="
+	fedora/fluxbox-applications.desktop
+	fedora/fluxbox-xsessions.desktop
+	fedora/fluxbox-xdg-menu-svn13.py
+"
+PATCH_URI="
+	fedora/fluxbox-startfluxbox-pulseaudio.patch
+"
 
 CYGCONF_ARGS="--enable-nls LIBS=-lcatgets"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	newbin ${S}/fluxbox-xdg-menu-svn13.py fluxbox-xdg-menu
+	newmenu ${S}/fluxbox-applications.desktop fluxbox.desktop
+
+	insinto /usr/share/xsessions
+	newins ${S}/fluxbox-xsessions.desktop fluxbox.desktop
+
+	viminto syntax
+	dovim ${S}/3rd/vim/vim/syntax/*.vim
+}
