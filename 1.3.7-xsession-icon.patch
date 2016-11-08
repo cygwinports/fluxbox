@@ -1,0 +1,8 @@
+--- origsrc/fluxbox-1.3.7/fluxbox-xsessions.desktop	2016-11-07 19:08:34.137936200 -0600
++++ src/fluxbox-1.3.7/fluxbox-xsessions.desktop	2016-11-07 22:57:47.437844500 -0600
+@@ -3,4 +3,5 @@ Name=Fluxbox
+ Comment=Very small and fast window manger
+ Comment[pl]=Mały i szybki zarządca okien
+ Exec=startfluxbox
++Icon=fluxbox
+ Type=Application
