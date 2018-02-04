@@ -1,6 +1,6 @@
 NAME="fluxbox"
 VERSION=1.3.7
-RELEASE=2
+RELEASE=3
 CATEGORY="X11"
 SUMMARY="Fluxbox window manager"
 DESCRIPTION="Fluxbox is a windowmanager for X that was based on Blackbox. It
@@ -21,7 +21,7 @@ PATCH_URI="
 
 REQUIRES="artwiz-aleczapka-fonts run xinit xmessage xmodmap"
 
-CYGCONF_ARGS="--enable-nls LIBS=-lcatgets"
+CYGCONF_ARGS="--enable-nls"
 
 src_install() {
 	cd ${B}
